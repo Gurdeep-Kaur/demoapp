@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Search </title>
+    <link rel="stylesheet" type="text/css" href="styles/style2.css">
+    <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" media="(max-width:600px)" href="styles/small-screen.css">
+    <link rel="stylesheet" media="(min-width:601px)" href="styles/large-screen.css">
+  </head>
+</html>
+<body>
+    <header class="header" style="display: -webkit-box;">
+      <button id="backbtn" style="flex-grow: 0;">
+        <i class="material-icons" style="padding: 10px;">arrow_back</i><br>
+      </button>
+    </header>   
+    <main class="main">
+       <center>
+         <img src="logo.jpg" alt="SERACH PAGE">
+         <div class="card cardTemplate form-card">
+           <form id="myForm" class="form">
+            <select required>
+              <option>Select your doctor</option>
+              <option value="audi">Dr.Mahesh</option>
+            </select>            
+            <input type="date" name="date" placeholder="select appointment date" required>
+            <input type="time" name="time" placeholder="select appointment time" required>
+            <input type="submit" value="SCHEDULE APPOINTMENT" id="registerbtn" style="width:70%;"><br><br>
+           </form>
+         </div>
+       </center>
+    </main>
+    <script>
+      document.getElementById('backbtn').addEventListener('click', function () {
+        location.href="./dashboard.html";
+      });
+
+      var form = document.getElementById('myForm');
+      form.addEventListener('submit',function () {
+        alert("appointment request sent");
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login </title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles/style2.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="styles/small-screen.css">
+    <link rel="stylesheet" media="(min-width:601px)" href="styles/large-screen.css">
+</head>
+</html>
+<body>
+    <header class="header">
+      <center style="width: 100%">
+        <h3> Sign In </h3>
+      </center>
+    </header>   
+    <main class="main">
+      <center>
+        <img src="logo.jpg" alt="Welcome to ontime app">
+        <div class="card cardTemplate form-card">
+          <form class="form" id="myForm" name="myForm"> 
+            <input type="text" name="email" placeholder="enter your email id" required >
+            <input type="password" name="pwd" placeholder="enter your password" required><br><br>
+            <input type="submit" value="SIGN IN" id="loginbtn"><br><br><br>
+          </form>
+          <a id="signuplink"> Create Account </a>
+          <a href="#"> Forgot Password</a>
+        </div>
+      </center>
+       <div class="loader">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+        </svg>
+      </div>
+    </main>
+    <script src="app.js" async></script>
+</body>
+</html>

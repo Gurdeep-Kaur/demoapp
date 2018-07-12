@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> dashboard </title>
+    <link rel="stylesheet" type="text/css" href="styles/style1.css">
+    <link rel="stylesheet" media="(max-width:600px)" href="styles/small-screen.css">
+    <link rel="stylesheet" media="(min-width:601px)" href="styles/large-screen.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+</html>
+<body>
+    <header class="header">
+        <button id="searchbtn">
+          <i class="material-icons">search</i><br>
+          <label> Search </label>
+        </button>
+        <button id="signoutbtn" onclick="window.location.href='./index.html'">
+          <i class="material-icons">account_circle</i><br>
+          <label> Sign Out </label>
+        </button>
+    </header>   
+    <main class="main">
+      <div class="card cardTemplate form-card">
+        <center>
+          <table class="table">
+            <caption>APPOINTMENTS</caption>
+            <tr>
+              <th>Doctor Name</th>
+              <th>Appointment Date</th> 
+              <th>Appointment Time</th>
+              <th>Pescription</th>
+            </tr>
+            <tr>
+              <td>Dr.Mahesh</td>
+              <td>21-07-2018</td> 
+              <td>10:00</td>
+              <td>Pescription</td>
+            </tr>
+          </table>
+        </center>
+      </div> 
+      <div class="loader">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+        </svg>
+      </div>
+    </main>
+    
+    <script>
+      document.getElementById('searchbtn').addEventListener('click', function () {
+        location.href="./search.html";
+      });
+
+      document.getElementById('signoutbtn').addEventListener('click', function () {
+        location.href="./index.html";
+      });
+    </script>
+</body>
+</html>
