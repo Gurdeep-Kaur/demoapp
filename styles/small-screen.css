@@ -2,11 +2,11 @@
   body {
     font-size: 20px;
   }
-  
-  .main img {
-    block-size: 100%;
-  }
 
+  .main img {
+    width:25%;
+  }
+  
   .card input[type=text], .card input[type=password], .card input[type=date], .card input[type=time], .card select{
     font-size: 16px;
   }
@@ -17,7 +17,7 @@
            
   .card a {
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
   }
 }
   

@@ -10,7 +10,11 @@ var filesToCache = [
   './styles/style1.css',
   './styles/small-screen.css',
   './styles/large-screen.css',
-  './logo.jpg',
+  './images/logo-100.jpg',
+  './images/logo-200.jpg',
+  './images/logo-400.jpg',
+  './images/logo-1000.jpg',
+  './images/logo-1800.jpg',
   'https://fonts.googleapis.com/icon?family=Material+Icons'
 ];
 

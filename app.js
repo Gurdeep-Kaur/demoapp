@@ -35,3 +35,6 @@ document.getElementById('signuplink').addEventListener('click', function () {
     location.href="./register.html";
   });
 
+document.getElementById('forgotlink').addEventListener('click', function () {
+    location.href="./forgot_pwd.html";
+});

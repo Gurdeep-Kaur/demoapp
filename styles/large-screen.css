@@ -24,11 +24,11 @@
     }
 
     .header i {
-        font-size: 50px;
+      font-size: 50px;
     }
 
-    main img {
-       block-size: 300px;
+    .main img {
+      width: 25%;
     }
 
     .card input[type=text], .card input[type=password], .card input[type=date], .card input[type=time], .card select{

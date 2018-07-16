@@ -22,12 +22,6 @@ body {
   width: 100%;
 }
 
-.main img {
-  display: inline;
-  padding: 10px;
-  block-size: 100%;
-}
-
 .card input[type=text], .card input[type=password], .card input[type=date], .card input[type=time], .card select{
   width: 80%;
   padding: 12px;

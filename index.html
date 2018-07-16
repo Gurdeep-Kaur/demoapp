@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> login </title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" type="text/css" href="styles/style2.css">
+    <link rel="stylesheet" href="./styles/style2.css">
     <link rel="stylesheet" media="(max-width:600px)" href="styles/small-screen.css">
     <link rel="stylesheet" media="(min-width:601px)" href="styles/large-screen.css">
 </head>
@@ -19,7 +19,14 @@
     </header>   
     <main class="main">
       <center>
-        <img src="logo.jpg" alt="Welcome to ontime app">
+        <img src="./images/logo-100.jpg"
+             sizes="50vw"
+             srcset="./images/logo-100.jpg 100w, 
+                    ./images/logo-200.jpg 200w,
+                    ./images/logo-400.jpg 400w, 
+                    ./images/logo-100.jpg 1000w,
+                    ./images/logo-1800.jpg 1800w" 
+             alt="app logo">
         <div class="card cardTemplate form-card">
           <form class="form" id="myForm" name="myForm"> 
             <input type="text" name="email" placeholder="enter your email id" required >
@@ -27,7 +34,7 @@
             <input type="submit" value="SIGN IN" id="loginbtn"><br><br><br>
           </form>
           <a id="signuplink"> Create Account </a>
-          <a href="#"> Forgot Password</a>
+          <a id="forgotlink"> Forgot Password</a>
         </div>
       </center>
        <div class="loader">
